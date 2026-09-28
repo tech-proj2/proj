@@ -42,11 +42,11 @@ function showTasks()
             li.style.backgroundColor=task.completed ? "#b6f2b6" : "";
         }
 
-        applyStyle(); // runs when the li is first built
+        applyStyle(); 
 
         checkbox.addEventListener("change", function (){
             task.completed=checkbox.checked;
-            applyStyle(); // runs on every tick/untick
+            applyStyle();
             updateCounts();
         });
 
